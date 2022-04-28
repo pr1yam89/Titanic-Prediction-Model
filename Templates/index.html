@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block body %}
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <title> Titanic Prediction Usecase </title>
+        <style>
+            h2,h4,h5,table{
+                text-align:center;
+            }
+            h5{
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h4> Check if passenger will survive Titanic Tragedy or not </h4>
+        <h5> Please Enter details: </h5>
+        <form method = "post" enctype = "multipart/form-data" action = "Predict">
+            {% csrf_token %}
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td>PClass:</td>
+                    <td><input name = "PClass" type = "text" placeholder = "1,2,3" value="1"/></td>
+                </tr>
+                <tr>
+                    <td>Sex:</td>
+                    <td><input name = "Sex" type = "text" placeholder = "Male or Female" value = "Female"/></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input name = "Age" type = "number" value = "40"/></td>
+                </tr>
+                <tr>
+                    <td>Sibsp:</td>
+                    <td><input name = "Sibsp" type = "number" placeholder = "0,1,2,3,4,5,6,7,8" value = "2"/></td>
+                </tr>
+                <tr>
+                    <td>Parch:</td>
+                    <td><input name = "Parch" type = "text" value = "0"/></td>
+                </tr>
+                <tr>
+                    <td>Fare:</td>
+                    <td><input name = "Fare" type = "text" value ="7.2500"/></td>
+                </tr>
+                <tr>
+                    <td>Embarked:</td>
+                    <td><input name = "Embarked" type = "text" placeholder = "S,C,Q" value = "S"/></td>
+                </tr>
+                <tr>
+                    <td>Title:</td>
+                    <td><input name = "Title" type = "text" placeholder = "Mr,Miss,Mrs,Master,Other" value="Miss"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type= "submit" value = "Submit"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+{% endblock body %}

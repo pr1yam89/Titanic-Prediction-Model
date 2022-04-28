@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Titanic Tragedy </title>
+
+        <style>
+            h1,h2,div{
+                text-align : center;
+            }
+            h1{
+                padding:10px;
+            }
+            pre{
+                font-family : arial;
+            }
+            img{
+                padding:20px;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                width:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Titanic Tragedy </h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqisq1sm05KGaECwC6YKTOVlNjrUYMcodCivZAP2l3OUbizcwzPQj9FmSwk1e1Wtg73dY&usqp=CAU" height ="350px" width ="500px" alt ="Image didn't load"/>
+        <h2>About Tragedy </h2>
+        <div>
+            <pre>
+            The RMS Titanic sank in the early morning hours of 15 April 1912 in the North Atlantic Ocean, 
+            four days into her maiden voyage from Southampton to New York City. The largest ocean liner in service 
+            at the time, Titanic had an estimated 2,224 people on board when she struck an iceberg at around 23:40 
+            (ship's time)[a] on Sunday, 14 April 1912. Her sinking two hours and forty minutes later at 02:20 
+            (ship's time; 05:18 GMT) on Monday, 15 April, resulted in the deaths of more than 1,500 people, 
+            making it one of the deadliest peacetime maritime disasters in history.
+            
+            Titanic received six warnings of sea ice on 14 April but was travelling about 22 knots when her 
+            lookouts sighted the iceberg. Unable to turn quickly enough, the ship suffered a glancing blow 
+            that buckled her starboard side and opened six of her sixteen compartments to the sea. Titanic 
+            had been designed to stay afloat with four of her forward compartments flooded but no more, and the 
+            crew soon realised that the ship would sink. They used distress flares and radio (wireless) messages 
+            to attract help as the passengers were put into lifeboats.
+
+            In accordance with existing practice, Titanic's lifeboat system was designed to ferry passengers to 
+            nearby rescue vessels, not to hold everyone on board simultaneously; therefore, with the ship sinking 
+            rapidly and help still hours away, there was no safe refuge for many of the passengers and crew with 
+            only 20 lifeboats, including 4 collapsible lifeboats. Poor management of the evacuation meant many 
+            boats were launched before they were completely full.
+
+            Titanic sank with over a thousand passengers and crew still on board. Almost all of those who jumped 
+            or fell into the water drowned or died within minutes due to the effects of cold shock and 
+            incapacitation. RMS Carpathia arrived about an hour and a half after the sinking and rescued all of 
+            the 710 survivors by 09:15 on 15 April, some nine and a half hours after the collision. The disaster 
+            shocked the world and caused widespread outrage over the lack of lifeboats, lax regulations, and the 
+            unequal treatment of the third class passengers during the evacuation. Subsequent inquiries 
+            recommended sweeping changes to maritime regulations, leading to the establishment in 1914 of the 
+            International Convention for the Safety of Life at Sea (SOLAS).
+            </pre>
+        </div>
+        <h2>About Titanic Prediction Model </h2>
+        <div>
+            <pre>
+                Using Machine learning model we predict whether the passenger will survive the tragedy or not.
+                On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after 
+                colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, 
+                resulting in the death of 1502 out of 2224 passengers and crew.
+                
+                While there was some element of luck involved in surviving, it seems some groups of people were 
+                more likely to survive than others.
+
+                In this challenge, we ask you to build a predictive model that answers the question: “what sorts 
+                of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
+            </pre>
+        <div>
+    </body>
+</html>
+{% endblock body %}
